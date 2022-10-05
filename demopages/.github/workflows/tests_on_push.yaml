@@ -2,12 +2,12 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - f1
 jobs:
   run_tests:
     runs-on: [windows-latest]
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@f1
       - uses: actions/setup-python@v1
         with:
           python-version: 3.10.7
